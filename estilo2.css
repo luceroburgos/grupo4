@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+/* Estilos de la barra de navegacion */
+
+.header {
+    background-color:lightslategrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+/* hacer que se vea la manito cuando acerco el mouse al logo */
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.4s;
+}
+
+/* Efecto sobre el logo para que palpite */
+.header .logo img:hover {
+    transform: scale(1, 2);
+    width: auto;
+}
+
+/* Sacamos el subrayado */
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* hacemos que se mueva cuando lo tocas */
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color:rgba(255, 247, 237, 0.89);
+    text-decoration: none;
+}
+
+/* cambia de color cuando lo tocas */
+.header .nav-links li a:hover {
+    color: rgb(202, 177, 143);
+}
+
+/* Estilos del carrusel */
+
+#conteItemsCarrousel {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.itemCarrousel {
+    height: 100%;
+    position: relative;
+    cursor: default;
+}
+
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.tarjetaCarrousel > h2 {
+    font-size: 45px;
+    line-height: 38px;
+    padding-bottom: 50px;
+    opacity: .9;
+    text-transform: uppercase;
+    font-weight: 600px;
+    text-align: center;
+    color: white;
+}
+
+.tarjetaCarrousel a {
+    color: rgb(235, 90, 131);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.tarjetaCarrousel a:hover {
+    text-decoration: underline;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo de flechas del carrusel */
+.flechasCarrousel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: beige;
+}
+
+#contePuntos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contePuntos > a {
+    font-size: 2em;
+    font-style: none;
+    color: rgb(133, 133, 133);
+}
+
+img {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+#tarjetaCarrousel-1 a img {
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+}
+
+
+/* Estilos del footer */
+footer {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}

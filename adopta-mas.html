@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adopta-estilo.css">
+    <script src="https://kit.fontawesome.com/53d3b13b8c.js" crossorigin="anonymous"></script>
+    <title>Adopta Mas</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo-nav.jpg" alt="logo-de-la-marca">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="inicio-mas.html">Inicio</a></li>
+                <li><a href="adopta-mas.html">Adoptar</a></li>
+                <li><a href="dona-mas.html">Donar</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- cards para los perritos en adopcion -->
+
+    <h2>Estos son nuestros perritos que buscan un hogar donde los amen y dar todo su amor y cariño.</h2>
+    <p>Elegí a tu próximo amigo y compañero de aventuras. Toma la decisión de cambiarles la vida y
+        permitir que ellos cambien la tuya para siempre!
+    </p>
+
+    <div class="container">
+        <div class="card">
+            <figure>
+                <img src="benito-1.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Benito (5 meses)</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Optio accusantium qui iusto, iste, nihil dolorem voluptas 
+                    provident asperiores quisquam corrupti saepe commodi nemo 
+                    molestiae ad veritatis esse minus. Suscipit, tenetur!</p>
+                    <a href="#adoptar-Benito">¡Quiero adoptarlo!</a>
+                </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="Tina-2.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Tina (2 años)</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Optio accusantium qui iusto, iste, nihil dolorem voluptas 
+                    provident asperiores quisquam corrupti saepe commodi nemo 
+                    molestiae ad veritatis esse minus. Suscipit, tenetur!</p>
+                    <a href="#adoptar-Tina">¡Quiero adoptarla!</a>
+                </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="Thor-3.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Thor (10 años)</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Optio accusantium qui iusto, iste, nihil dolorem voluptas 
+                    provident asperiores quisquam corrupti saepe commodi nemo 
+                    molestiae ad veritatis esse minus. Suscipit, tenetur!</p>
+                    <a href="#adoptar-Thor">¡Quiero adoptarlo!</a>
+                </div>
+        </div>
+    </div>
+<!-- Secciones seleccionables con form -->
+
+<!-- Form de Benito -->
+    <section id="adoptar-Benito" class="adoptar-1">
+            <form class="form">
+                <h5 class="form-title">Benito</h5>
+                <p class="form-text">Gracias por tomar la decisión de adoptar a Benito. Estamos seguros de que será tu mejor amigo!!!
+                    Por favor llena tus datos para que nos pongamos en contacto con vos y finalmente puedas 
+                    encontrarte con tu nuevo bebé peludito.</p>
+                    <div class="form-container">
+                        <div class="form-grupo">
+                            <input id="inNombre" type="text" class="form-input" placeholder="Nombre"/>
+                            <label for="inNombre" class="form-label" > </label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-grupo">
+                            <input id="inNumero" type="number" class="form-input" placeholder="Número de teléfono"/>
+                            <label for="inNumero" class="form-label"> </label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-grupo">
+                            <input id="inMensaje" type="text" class="form-input" placeholder="Hola! Quiero adoptar a Benito..." required/>
+                            <label for="inMensaje" class="form-label"> </label>
+                            <span class="form-line"></span>
+                        </div>
+                        <input type="submit" class="form-submit" value="Enviar">
+                    </div>
+            </form>
+
+        </div>
+    </section>
+
+<!-- Form de Tina -->
+    <section id="adoptar-Tina" class="adoptar-2">
+        <form class="form">
+            <h5 class="form-title">Tina</h5>
+            <p class="form-text">¡Tina está muy contenta! Siempre soñó con una familia como la tuya,
+                te prometemos que serás la persona más feliz del mundo con ella. Estás tomando una
+                decisión muy importante, ¡deberías estar orgulloso! 
+                Por favor rellena tus datos para que nos pongamos en contacto con vos y finalmente puedas 
+                encontrarte con esta princesa.
+            </p>
+                <div class="form-container">
+                    <div class="form-grupo">
+                        <input id="inNombre" type="text" class="form-input" placeholder="Nombre"/>
+                        <label for="inNombre" class="form-label"> </label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-grupo">
+                        <input id="inNumero" type="number" class="form-input" placeholder="Número de teléfono"/>
+                        <label for="inNumero" class="form-label"> </label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-grupo">
+                        <input id="inMensaje" type="text" class="form-input" placeholder="Hola! Quiero adoptar a Tina..." required/>
+                        <label for="inMensaje" class="form-label"> </label>
+                        <span class="form-line"></span>
+                    </div>
+                    <input type="submit" class="form-submit" value="Enviar">
+                </div>
+        </form>
+
+    </div>
+</section>
+
+<section id="adoptar-Thor" class="adoptar-3">
+    <form class="form">
+        <h5 class="form-title">Thor</h5>
+        <p class="form-text">Nos alegra el corazón saber que hay gente como vos!!!
+            No todos están preparados para adoptar a un ancianito, pero te aseguro que 
+            no te vas a arrepentir. Le estarás dando los mejores años de tu vida a Thor
+            y te prometemos que él te dará los suyos a vos. Cuidalo y mimalo, hace tiempo
+            que te está esperando!!!
+            Por favor rellena tus datos para que nos pongamos en contacto con vos y finalmente puedas 
+            encontrarte con este inteligente gradulón.
+        </p>
+            <div class="form-container">
+                <div class="form-grupo">
+                    <input id="inNombre" type="text" class="form-input" placeholder="Nombre"/>
+                    <label for="inNombre" class="form-label"> </label>
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-grupo">
+                    <input id="inNumero" type="number" class="form-input" placeholder="Número de teléfono"/>
+                    <label for="inNumero" class="form-label"> </label>
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-grupo">
+                    <input id="inMensaje" type="text" class="form-input" placeholder="Hola! Quiero adoptar a Thor..." required/>
+                    <label for="inMensaje" class="form-label"> </label>
+                    <span class="form-line"></span>
+                </div>
+                <input type="submit" class="form-submit" value="Enviar">
+            </div>
+    </form>
+</div>
+</section>
+    <footer>
+        <p>&copy; 2023 Grupo 4</p>
+    </footer>
+</body>
+</html>
