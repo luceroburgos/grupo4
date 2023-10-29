@@ -1,15 +1,15 @@
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
 
 /* Estilos de la barra de navegacion */
-
 .header {
     background-color:lightslategrey;
     display: flex;
@@ -36,6 +36,7 @@ body {
     width: auto;
 }
 
+/* Sacamos el subrayado */
 .header .nav-links {
     list-style: none;
 }
@@ -45,6 +46,7 @@ body {
     padding: 0 20px;
 }
 
+/* hacemos que se mueva cuando lo tocas */
 .header .nav-links li:hover {
     transform: scale(1.1);
 }
@@ -55,6 +57,28 @@ body {
     text-decoration: none;
 }
 
+/* cambia de color cuando lo tocas */
 .header .nav-links li a:hover {
     color: rgb(202, 177, 143);
+}
+
+/* main */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/* formulario */
+form{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    border-radius: 2px;
+}
+form input{
+    margin: 10px 10px;
+
+}
+fieldset{
+    height: 100px;
 }
