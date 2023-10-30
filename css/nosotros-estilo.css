@@ -65,58 +65,21 @@ body {
 }
 
 /* main */
-main {
-    display: flex;
-    flex-wrap: wrap;
-
+main{
+    padding: 0 20px;
 }
-
-main h1{
-   padding: 30px;
-   text-shadow: 2px 2px gray;
-}
-main p{
-    padding: 10px;
+main h1, h2,h3{
     text-align: center;
-    font-weight: bold;
-}
-/* formulario */
-form {
-    display: flex;
-    flex-direction: column;
+    padding: 15px;
+    text-shadow: 2px 2px gray;
+ }
+ main p{
+     padding: 10px;
+     text-align: center;
+     font-weight: bold;
+ }
+ iframe{
+  
+    height: 300px;
     width: 100%;
-    border-radius: 2px;
-    text-align: center;
-    align-items: center;
-    color: rgba(128, 0, 128, 0.534);
-}
-
-form input {
-    margin: 10px 10px;
-
-}
-form label{
-    font-weight: bold;
-    color: purple;
-}
-
-fieldset {
-    padding: 20px;
-}
-
-.form-contenedor {
-    padding: 20px;
-}
-
-.form-contenedor li {
-    list-style: none;
-}
-.form-boton{
-    border-radius: 15px;
-    width: 90px;
-    background-color: darkorchid;
-    color: antiquewhite;
-}
-.form-boton:hover{
-    background-color: purple;
-}
+ }
