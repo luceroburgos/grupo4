@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contacto-estilo.css">
+    <script src="https://kit.fontawesome.com/53d3b13b8c.js" crossorigin="anonymous"></script>
+    <title>Formulario de adopción</title>
+</head>
+
+<body>
+
+    <!-- Barra de navegacion -->
+    <header class="header">
+        <div class="logo">
+            <img src="../src/img/logo-nav.jpg" alt="logo-de-la-marca">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./inicio-mas.html">Inicio</a></li>
+                <li><a href="./adopta-mas.html">Adoptar</a></li>
+                <li><a href="./dona-mas.html">Donar</a></li>
+                <li><a href="./contacto-mas.html">Contactanos</a></li>
+                <li><a href="./nosotros-mas.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido main -->
+    <main>
+        <h1>Ingresa tus datos para postularte para la adopcion</h1>
+        <p>Este formulario es para procesar la solicitud. La concreción de la adopción quedará sujeta a los datos
+            brindados, la verificación de los mismos, la entrevista realizada y la dosponibilidad del animal elegido.
+        </p>
+        <p>
+            Tené en cuenta que para avanzar con tu postulación, el formulario debe estar completo con los datos reales
+            de quien va a adoptar. Si el interesado no cumple con los requisitos, no avanzaremos con su sulicitud. Puede
+            pasar que no te respondamos de inmediatos ya que nos tomamos un tiempo para verificar todas las solicitudes
+            de pre adopción enviadas.
+        </p>
+
+        <!-- formulario de adopcion -->
+        <form action="">
+
+            <input type="text" name="nombreCompleto" placeholder="Nombre y Apellido" required>
+
+            <input type="number" name="dni" placeholder="DNI" required>
+
+            <input type="tel" name="nroTel" placeholder="Teléfono/s de Contacto" required>
+
+            <label for="fdireccion"> Dirección completa (altura y timbre) *</label>
+            <input type="text" id="fdireccion" required>
+
+            <label for="flocalidad">Localidad *</label>
+            <input type="text" name="localidad" id="flocalidad">
+            <fieldset>
+                
+                <label for="">¿En qué tipo de vivienda habitás?</label>
+                <div>
+                    <input type="radio" id="fradioCasa" name="opcionHogar" value="Casa"> CASA
+                    <input type="radio" id="fradioDepto" name="opcionHogar" value="Departamento"> DEPARTAMENTO
+                </div>
+                
+                <label for="">Seleccioná la opción correcta por favor</label>
+                <div>
+                        <input type="radio" id="fradioPropie" name="opcionPropiedad" value="Propietario"> PROPIETARIO
+                        <input type="radio" id="fradioInqui" name="opcionPropiedad" value="Inquilino">INQUILINO
+                    </div>
+            </fieldset>
+
+            <div class="form-contenedor">
+
+                <label for="fanimal">Seleccione que animal quiere adoptar</label>
+                <select name="animales" id="fanimal">
+                    <option value="Perro"> Perro</option>
+                    <option value="Gato">Gato</option>
+                </select>
+            </div>
+                
+            <input type="email" id="femail" name="email" placeholder="E-mail" required>
+
+            <input type="text" name="fFacebook" id="fFacebook" placeholder="Perfil de Facebook">
+
+            <input type="text" name="fInstagram" id="fInstagram" placeholder="Perfil de Instagram">
+
+            <fieldset>
+                <label for="">En caso de alquilar, ¿Consultaste previamente con el dueño de la vivienda?</label>
+                <div class="form-contenedor">
+
+                    <input type="radio" name="opcionConsulta" value="opcion1"> Si, pregunté y se puede tener mascotas.
+                    <input type="radio" name="opcionConsulta" value="opcion2"> NO pregunté aun pero en el edificio hay
+                    mascotas.
+                    <input type="radio" name="opcionConsulta" value="opcion3"> No prgunté.
+                    <input type="radio" name="opcionConsulta" value="opcion4"> No alquilo.
+                </div>
+                </fieldset>
+
+                <div class="form-contenedor">
+                    <label for="">En caso de tener otros animales, ¿Están castrados?</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="opcionCastracion" value="opcion1">
+                            Si, todos castrados.
+                        </li>
+                        <li>
+                            <input type="radio" name="opcionCastracion" value="opcion2">
+                            Algunos Sí y otros No
+                        </li>
+                        <li>
+                            <input type="radio" name="opcionCastracion" value="opcion3">
+                            NO castré aún, pero lo voy hacer.
+                        </li>
+                        <li>
+                            <input type="radio" name="opcionCastracion" value="opcion4">
+                            No están castrados.
+                        </li>
+                        <li>
+                            <input type="radio" name="opcionCastracion" value="opcion5">
+                            No tengo otros animales.
+                        </li>
+                    </ul>
+                </div>   
+                
+
+            <input class="form-boton" type="submit" value="Enviar">
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>
